@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Counter</title>
+
+
+    <style>
+        .title{
+            text-align: center;
+            padding-top: 50px;
+            padding-Bottom: 30px
+        }
+
+        .views{
+            text-align: center;
+        }
+
+        .container{
+            display:flex;
+            justify-content: space-evenly;
+        }
+
+        .add_visits{
+            background-color: aquamarine;
+        }
+
+        .reset{
+            background-color: rgb(40, 226, 233);
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1 class="title">Counter</h1>
+
+    <form action='/destroy_session' method='post'>
+
+    <h2 class="views"> {{session['views']}} views</h2>
+
+    <div class="container">
+
+    <!-- {% if 'views' in session: %} -->
+        <!-- {% if session['views'] + 2 %} -->
+        <!-- <p><button class="add_visits">Add two to visit!</button></p> -->
+    <!-- {% endif %} -->
+<!-- {% endif %} -->
+
+        <!-- <p><button class="add_visits">Add two to visit!</button></p> -->
+
+        <!-- <p><button class="add_two"></button><a href='/add_two'> Add two to visit!</a></button></p> -->
+
+        <p><button class="add_two"><a href='/add_two'> Add two to visit!</a></p>
+
+        <p><button class="reset">Reset</button></p>
+
+
+
+    </div>
+
+    </form>
+
+</body>
+</html> 
